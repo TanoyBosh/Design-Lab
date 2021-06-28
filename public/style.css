@@ -16,6 +16,10 @@ html {
 
 body {
   overflow-x: hidden;
+  background-image: url(nsl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #header {
@@ -67,7 +71,7 @@ body {
 
 #header nav ul li a:hover {
   text-decoration: none;
-  color: #00B894;
+  color: #220468;
 }
 
 #header .fa-bars {
@@ -94,12 +98,12 @@ body {
 
 #home .content h1 {
   font-size: 6rem;
-  color: #00B894;
+  color: #220468;
 }
 
 #home .content h2 {
   font-size: 5rem;
-  color: #00B894;
+  color: #220468;
 }
 
 #home .content h3 {
@@ -112,7 +116,7 @@ body {
   outline: none;
   border: none;
   border-radius: 5rem;
-  background: #00B894;
+  background: #220468;
   color: #fff;
   cursor: pointer;
   height: 4rem;
@@ -137,7 +141,7 @@ body {
   width: 4rem;
   line-height: 4rem;
   text-align: center;
-  background: #00B894;
+  background: #220468;
   border-radius: 5rem;
   font-size: 1.7rem;
   color: #fff;
@@ -168,7 +172,7 @@ body {
   color: #fff;
   text-align: center;
   position: relative;
-  color: #00B894;
+  color: white;
 }
 
 #course .heading::after {
@@ -205,7 +209,7 @@ body {
   border-radius: .5rem;
   -webkit-box-shadow: 0 0 .3rem #333;
   box-shadow: 0 0 .3rem #333;
-  margin: 2rem;
+  margin: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,8 +228,8 @@ body {
 }
 
 #course .box-container .box img {
-  height: 35%;
-  width: 35%;
+  height: 100%;
+  width: 100%;
   -webkit-transform: translateY(5rem);
   transform: translateY(5rem);
 }
@@ -263,7 +267,7 @@ body {
   place-items: center;
   min-height: 100vh;
   width: 100vw;
-  background: #00B894;
+  background: #220468;
 }
 
 #service .heading {
@@ -318,7 +322,7 @@ body {
 
 #service .box-container .box .info {
   padding-left: 2.5rem;
-  border-left: 0.4rem solid #00B894;
+  border-left: 0.4rem solid #220468;
 }
 
 #service .box-container .box .info h2 {
@@ -367,7 +371,7 @@ body {
 }
 
 #testimonial .heading::after {
-  background: #00B894;
+  background: #220468;
 }
 
 #testimonial .box-container {
@@ -401,9 +405,9 @@ body {
   height: 10rem;
   width: 10rem;
   border-radius: 10rem;
-  border: 0.5rem solid #00B894;
-  -webkit-box-shadow: 0 0 5rem #00B894 inset;
-  box-shadow: 0 0 5rem #00B894 inset;
+  border: 0.5rem solid #220468;
+  -webkit-box-shadow: 0 0 5rem #220468 inset;
+  box-shadow: 0 0 5rem #220468 inset;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -411,7 +415,7 @@ body {
 #testimonial .box-container .box .info h2 {
   margin-top: -2.5rem;
   margin: 2rem;
-  color: #00B894;
+  color: #220468;
   text-align: right;
 }
 
@@ -423,7 +427,7 @@ body {
 
 #testimonial .box-container .box .info p i {
   padding: 1rem;
-  color: #00B894;
+  color: #220468;
 }
 
 #testimonial .box-container .box:nth-child(even) {
@@ -434,8 +438,8 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00B894), to(#00B894)), url(../images/contact-bg.jpg) no-repeat;
-  background: linear-gradient(#00B894, #00B894), url(../images/contact-bg.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#220468), to(#220468)), url(../images/contact-bg.jpg) no-repeat;
+  background: linear-gradient(#220468, #220468), url(../images/contact-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -449,7 +453,7 @@ body {
   color: #fff;
   text-align: center;
   position: relative;
-  color: #333;
+  color: white;
 }
 
 #contact .heading::after {
@@ -509,7 +513,7 @@ body {
 
 #contact form .inputBox input:focus,
 #contact form .inputBox textarea:focus {
-  border-color: #00B894;
+  border-color: #220468;
 }
 
 #contact form .inputBox textarea {
@@ -520,7 +524,7 @@ body {
 
 #contact form .inputBox input[type="submit"] {
   border: none;
-  background: #00B894;
+  background: #220468;
   color: #fff;
 }
 
@@ -548,7 +552,7 @@ body {
 }
 
 #footer h1 span {
-  color: #00B894;
+  color: #220468;
 }
 
 @-webkit-keyframes background {
