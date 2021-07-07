@@ -1,18 +1,33 @@
 <html>
-    
-<div id="all">
-    <h1>this is teacher page</h1>
-    <h2>Upload Courses</h2>
-    <li>C</li>
-    <li>C#</li>
-    <li>C++</li>
-</div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div id="login">
+    <h1>Teacher</h1>
+    <h3>Upload Courses</h3> <br> <br>
+    <form action="/studentpage" method="post" enctype="multipart/form-data">
+        <input class="btn btn-secondary" type="file" name="file"> <br> <br>
+        <input class="btn btn-primary" type="submit" value="upload">
+    </form> <br> <br>
+    <button class="btn btn-light" onclick="document.location='/'">Cancel</button>
+</div> <br> <br>
+
+<footer>By DECODER</footer>
+
 </html>
 
 <style>
-    #all {
+    #login {
         text-align: center;
         margin: 40px 0px 0px;
         padding: 10px 0px 24px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 0rem;
     }
 </style>
