@@ -9,9 +9,6 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
-app.listen(port = 3000, function () {
-    console.log("SERVER ON");
-});
 
 app.get("/",function(req,res){
     res.render(__dirname + "/views/firstpage.ejs")
@@ -41,4 +38,9 @@ app.get("/studentsignup", function(req,res){
 });
 app.get("/studentpage", function (req, res) {
     res.render(__dirname + "/views/student/studentpage.ejs");
+});
+
+
+app.listen(port = 3000, function () {
+    console.log("SERVER ON");
 });
