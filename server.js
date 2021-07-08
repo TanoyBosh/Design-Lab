@@ -1,8 +1,11 @@
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const express = require("express");
-const app = express();
 const upload = require("express-fileupload");
+const app = express();
+const router = express.Router();
+const path = require('path'); 
+const fs = require('fs');
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -42,12 +45,11 @@ app.get("/studentpage", function (req, res) {
     res.render(__dirname + "/views/student/studentpage.ejs");
 });
 
-app.post("/studentpage", function (req, res) {
+app.post("/teacherpage", function (req, res) {
     if (req.files) {
-        console.log(req.files)
+
         var file = req.files.file
         var filename = file.name
-        console.log(filename)
 
         file.mv('./course/' + filename, function (err) {
             if (err) {
@@ -57,7 +59,7 @@ app.post("/studentpage", function (req, res) {
             }
         })
     }
-})
+});
 
 app.listen(port = 3000, function () {
     console.log("SERVER ON");
