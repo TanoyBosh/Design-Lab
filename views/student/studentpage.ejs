@@ -8,7 +8,7 @@
     <% for(var i=0; i< data.length; i++) {%>
     <img src="<%= data[i].filepath%>" alt="files" style="width:500px; height:200px";>
     <form action="/download/<%= data[i]._id%>"> <br>
-        <input type="submit" value="download">
+        <input class="btn btn-primary" type="submit" value="download">
     </form>
     <% } %>
     <% } %> <br>

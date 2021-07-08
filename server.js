@@ -25,7 +25,7 @@ var upload = multer({
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/video', {
+mongoose.connect('mongodb://localhost:27017/courses', {
         useNewUrlParser: true
     })
     .then(() => console.log('Connected')).catch(err => console.log('error ocured', err));
@@ -98,8 +98,8 @@ app.post('/studentpage', upload.single('file'), (req, res) => {
     var temp = new fileModel({
         filepath: x
     })
-    temp.save((err, data) => {
-        if (err) {
+    ((err, data) => {
+        if (err) {temp.save
             console.log(err)
         }
         res.sendFile(__dirname + "/goback.html")
